@@ -1,0 +1,290 @@
+/* ==========================================================================
+   skin - COMMON
+   ========================================================================== */
+   
+/* -------------------------------------------------------------------------- */
+/* HEADER */
+
+/* img */
+#header .brand img.title 	{ width:380px; top:75px; left:10%; }
+#header .brand img.sig 		{ width:250px; bottom:40px; right:23%; }
+
+/* img - responsive */
+@media only screen and (max-width:960px) {
+	
+	#header .brand img.sig 		{ bottom:18px; right:20%; } 
+
+}
+@media only screen and (max-width:700px) {
+	
+	#header .brand img.sig 		{ left:300px; right:auto; } 
+
+}
+@media only screen and (max-width:640px) {
+	
+	/* center imgs */
+	#header .brand img.title { position:relative; top:auto; left:auto; width:94%; max-width:380px; height:auto; max-height:80px; margin:100px auto 0 auto; }
+	#header .brand img.sig	 { display:none; }
+}
+@media only screen and (max-width:320px) {
+
+	/* reduce height */
+	#header .brand img.title { margin-top:110px; }
+	
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* NAV */ 
+
+/* bg */
+#nav { background:#5b2a23; }
+
+/* navItem - interaction */	
+.no-touch #nav .navItem:hover,
+.no-touch #nav .navItem:focus,
+.touch #nav .navItem:active { background:#6c4139; }
+
+/* navItem - selected */
+#nav .navItem.selected,
+#nav .navItem.selected .label,
+.no-touch #nav .navItem.selected:hover,
+.no-touch #nav .navItem.selected:focus,
+.touch #nav .navItem.selected:active { background:#6c4139; border-top-color:#ff6634; }
+
+/* navItem extend */
+#nav #nav0 { width:16.00%; margin-left:14.875%; }
+#nav #nav1 { width:15.00%; }
+#nav #nav2 { width:11.00%; }
+#nav #nav3 { width:12.00%; }
+#nav #nav4 { width:14.00%; }
+#nav #nav5 { width:16.00%; margin-right:0.875%; }
+
+/* responsive */
+@media only screen and (max-width:980px) {
+
+	/* navItem extend */
+	#nav #nav0 { margin-left:7.875%; }
+	#nav #nav5 { margin-right:7.875%; }
+
+}
+@media only screen and (max-width:640px) {
+	
+	/* navItem - border */
+	#nav #navSelect,
+	#nav #navItems .navItem { border-bottom-color:#913528; }
+	
+	/* navItem - interaction */	
+	.no-touch #nav #navItems .navItem:hover,
+	.no-touch #nav #navItems .navItem:focus,
+	.touch #nav #navItems .navItem:active { background:#ff6634; }
+	
+	/* navItem - selected */
+	#nav .navItem.selected,
+	#nav .navItem.selected .label,
+	.no-touch #nav .navItem.selected:hover,
+	.no-touch #nav .navItem.selected:focus,
+	.touch #nav .navItem.selected:active { color:#ff6634; border-bottom-color:#913528; }
+	
+	/* navSelect */
+	#nav #navSelect { background:#49231c; }
+	
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* FORM */
+
+/* input */
+.formView input.text:focus,
+.formView input.text:active { border-color:#ed5f47; }
+
+
+/* -------------------------------------------------------------------------- */
+/* BUTTONS */
+
+/* extend - btnCircleLrg */	
+.btnCircleLrg { background:#ff6634; }
+.btnCircleLrg:hover,
+.btnCircleLrg:focus,
+.btnCircleLrg:active { background:#ff9f77; }
+
+/* btnBox */
+.btnBox:hover,
+.btnBox:focus,
+.btnBox:active { background-color:#ff6634; }
+
+
+/* ==========================================================================
+   skin - HOME
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* FOCUSMSG */
+
+/* h1 */
+#home #focusMsg h1.title { width:66%; color:#ff6634; }
+/* h1 > msg */
+#home #focusMsg .msg { padding-left:100px; }
+/* h2 */
+#home #focusMsg h2 { width:50%; }
+
+/* responsive */
+@media only screen and (max-width:980px) {
+
+	/* reduce side gaps */
+	#home #focusMsg h1.title,
+	#home #focusMsg h2 { width:80%; }
+
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* HEADING */
+
+/* headingB */
+#home .headingB { background:#f97a4e; }
+#home .headingB .sublabel { color:#fdcab8; }
+
+/* responsive */
+@media only screen and (max-width:500px) {
+
+	/* update heading to unified stripe style */
+	#home .heading,
+	#home .heading .padder { background:#f97a4e!important; }
+
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* F1 */
+
+/* hover */
+#home .f1 .hover .icon { background:#d16c49; }
+
+/* overlay */
+#home .f1 .overlay { background:rgba(249,122,78,0.95); }
+.oldie #home .f1 .overlay { background:#f97a4e; }
+
+/* responsive */
+@media only screen and (max-width:640px) {
+
+	/* update bg */
+	#home .f1 .overlay,
+	.oldie #home .f1 .overlay { background:#d16c49; }
+
+}
+@media only screen and (max-width:500px) {
+	
+	/* update hover touch */
+	.touch #home .f1 .hover .icon { background:#d16c49; }
+
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* T1 */
+
+/* content */
+
+	/* bgImg */
+	#home .t1#booking .content .bgImg 	{ background-image:url(../img/bg-t1-booking.jpg); }
+	#home .t1#donate .content .bgImg 	{ background-image:url(../img/bg-t1-donate.jpg); }
+	
+	/* a */
+	#home .t1 .content a,
+	#home .t1 .content a:hover,
+	#home .t1 .content a:focus,
+	#home .t1 .content a:active { color:#ff6634; }
+
+/* btnAction */
+#home .t1 .btnAction:hover,
+#home .t1 .btnAction:active,
+#home .t1 .btnAction:focus { background:#f97a4e; }
+
+	/* icon */
+	#home .t1 .btnAction .icon { background:#f97a4e; }
+	#home .t1 .btnAction:hover .icon,
+	#home .t1 .btnAction:active .icon,
+	#home .t1 .btnAction:focus .icon { color:#f97a4e; }
+			
+/* responsive */
+@media only screen and (max-width:640px) {
+
+	/* btnAction */	
+	#home .t1 .btnAction:hover,
+	#home .t1 .btnAction:active,
+	#home .t1 .btnAction:focus { background:#d16c49; }
+	
+		#home .t1 .btnAction:hover .icon,
+		#home .t1 .btnAction:active .icon,
+		#home .t1 .btnAction:focus .icon { color:#d16c49; }
+	
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* T2 */
+
+/* content */
+#home .t2 .content { background:#f97a4e; }
+
+	/* bgImg - extend */
+	#home .t2#shop .content .bgImg { 
+		background-image:url(../img/bg-t2-shop.jpg);
+		/*opacity*/
+		opacity:0.1;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+		filter:alpha(opacity=10); }
+	
+	/* btnBox */
+	#home .t2 .content .btnBox { background:#333; }
+	
+/* btnAction */
+#home .t2 .btnAction:hover,
+#home .t2 .btnAction:active,
+#home .t2 .btnAction:focus { background:#f97a4e; }
+
+	/* icon */
+	#home .t2 .btnAction .icon { background:#f97a4e; }
+	#home .t2 .btnAction:hover .icon,
+	#home .t2 .btnAction:active .icon,
+	#home .t2 .btnAction:focus .icon { color:#f97a4e; }
+
+/* responsive */
+@media only screen and (max-width:640px) {
+	
+	/* btnAction */
+	#home .t2 .btnAction:hover,
+	#home .t2 .btnAction:active,
+	#home .t2 .btnAction:focus { background:#d16c49; }
+	
+		#home .t2 .btnAction:hover .icon,
+		#home .t2 .btnAction:active .icon,
+		#home .t2 .btnAction:focus .icon { color:#d16c49; }
+	
+}
+@media only screen and (max-width:500px) {
+	
+	/* content */
+	#home .t2 .content { background:#ede6dc; }	
+
+}
+
+/* -------------------------------------------------------------------------- */
+/* T3 */
+
+/* content */
+#home .t3 .content { background:#f97a4e; }
+
+	/* icon */
+	#home .t3 .content .links li .icon { background:#3e3830; }
+
+/* responsive */
+@media only screen and (max-width:500px) {
+	
+	/* content */
+	#home .t3 .content,
+	#home .t3.uneven .content { background:#d16c49; }
+	
+}

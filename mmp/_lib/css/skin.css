@@ -1,0 +1,258 @@
+/* ==========================================================================
+   skin - COMMON
+   ========================================================================== */
+   
+/* -------------------------------------------------------------------------- */
+/* HEADER */
+
+/* img */
+#header .brand img.title 	{ width:380px; top:75px; left:10%; }
+#header .brand img.sig 		{ width:250px; bottom:40px; right:23%; }
+
+/* img - responsive */
+@media only screen and (max-width:800px) {
+	
+	#header .brand img.sig 	{ right:15%; }
+		
+}
+@media only screen and (max-width:640px) {
+	
+	/* center imgs */
+	#header .brand img.title { position:relative; top:auto; left:auto; width:94%; max-width:380px; height:auto; max-height:80px; margin:100px auto 0 auto; }
+	#header .brand img.sig	 { display:none; }
+}
+@media only screen and (max-width:320px) {
+
+	/* reduce height */
+	#header .brand img.title { margin-top:110px; }
+	
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* NAV */ 
+
+/* bg */
+#nav { background:#3f1e36; }
+
+/* navItem - interaction */	
+.no-touch #nav .navItem:hover,
+.no-touch #nav .navItem:focus,
+.touch #nav .navItem:active { background:#53354a; }
+
+/* navItem - selected */
+#nav .navItem.selected,
+#nav .navItem.selected .label,
+.no-touch #nav .navItem.selected:hover,
+.no-touch #nav .navItem.selected:focus,
+.touch #nav .navItem.selected:active { background:#53354a; border-top-color:#d20079; }
+
+/* navItem extend */
+#nav #nav0 { width:10.00%; }
+#nav #nav1 { width:13.00%; }
+#nav #nav2 { width:12.00%; }
+#nav #nav3 { width:10.50%; }
+#nav #nav4 { width:12.25%; }
+#nav #nav5 { width:13.25%; }
+#nav #nav6 { width:13.50%; }
+#nav #nav7 { width:15.25%; }
+
+@media only screen and (max-width:640px) {
+	
+	/* navItem - border */
+	#nav #navSelect,
+	#nav #navItems .navItem { border-bottom-color:#662456; }
+	
+	/* navItem - interaction */	
+	.no-touch #nav #navItems .navItem:hover,
+	.no-touch #nav #navItems .navItem:focus,
+	.touch #nav #navItems .navItem:active { background:#d20079; }
+	
+	/* navItem - selected */
+	#nav .navItem.selected,
+	#nav .navItem.selected .label,
+	.no-touch #nav .navItem.selected:hover,
+	.no-touch #nav .navItem.selected:focus,
+	.touch #nav .navItem.selected:active { color:#d20079; border-bottom-color:#662456; }
+	
+	/* navSelect */
+	#nav #navSelect { background:#33182b; }
+	
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* SIDENAV */
+
+/* level 1 selected */
+#sideNav li.selected a { background:#d20079; }
+#sideNav li.selected a:hover,
+#sideNav li.selected a:focus { background:#ae0064; }
+#sideNav li.selected a.selected,
+#sideNav li.selected a.selected:hover,
+#sideNav li.selected a.selected:focus { background:#d20079; }
+
+
+/* -------------------------------------------------------------------------- */
+/* PAGINATION */
+
+/* btnNav */
+.pagination .btnNav:hover,
+.pagination .btnNav:focus,
+.pagination .btnNav:active { background:#d20079; }
+		
+
+/* -------------------------------------------------------- */
+/* FORM */
+
+/* input */
+.formView input.text:focus,
+.formView input.text:active { border-color:#d20079; }
+
+
+/* -------------------------------------------------------------------------- */
+/* ITEMS */
+
+/* date */
+.item .date { color:#d20079; }
+	
+/* title */
+.item:hover .title,
+.item:focus .title,
+.item:active .title { color:#d20079; }
+
+
+/* -------------------------------------------------------------------------- */
+/* BUTTONS */
+
+/* btnIcon */
+.btnIcon:hover,
+.btnIcon:focus,
+.btnIcon:active { background:#d20079; }
+
+/* btnText */
+.btnText .icon { background:#d20079; }
+
+/* btnCircle */
+.btnCircle:hover,
+.btnCircle:focus,
+.btnCircle:active { background:#d20079; }
+
+/* btnCircleLrg */	
+.btnCircleLrg { background:#850044; }
+.btnCircleLrg:hover,
+.btnCircleLrg:focus,
+.btnCircleLrg:active { background:#d20079; }
+
+/* btnBox */
+.btnBox:hover,
+.btnBox:focus,
+.btnBox:active { background-color:#d20079; }
+
+/* btnAction */
+.btnAction:hover .icon,
+.btnAction:focus .icon,
+.btnAction:active .icon { background:#d20079; }
+
+/* btnTitle */
+.btnTitle { background:#850044; }
+.btnTitle:hover,
+.btnTitle:focus,
+.btnTitle:active { background:#980852; }
+.btnTitle .icon { background:#980852; }
+
+
+/* ==========================================================================
+   skin - HOME
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* FOCUS */
+
+/* f1 - btnslide interaction */
+#home #f1 .slideshow .controls .activeSlide,
+#home #f1 .slideshow .controls .activeSlide:hover,
+#home #f1 .slideshow .controls .activeSlide:focus,
+#home #f1 .slideshow .controls .activeSlide:active { background:#980852; }
+
+/* f2 - section */
+#home #focus .section.f2 { background:#980852; }
+/* f2 - btnTitle */
+#home #focus .f2 .btnTitle.active,
+.no-touch #home #focus .f2 .btnTitle.active:hover,
+.no-touch #home #focus .f2 .btnTitle.active:focus,
+.touch #home #focus .f2 .btnTitle.active:active { background:#850044; }
+/* f2 - btnList */
+#home #focus .f2 .btnList { border-top-color:#a32164; }
+.no-touch #home #focus .f2 .btnList:hover,
+.no-touch #home #focus .f2 .btnList:focus,
+.touch #home #focus .f2 .btnList:active { background:#a32164; }
+
+
+/* -------------------------------------------------------------------------- */
+/* FOCUSMSG */
+
+/* h1 */
+#home #focusMsg h1.title { width:80%; color:#850044; }
+/* h2 */
+#home #focusMsg h2 { width:62%; }
+
+
+/* -------------------------------------------------------------------------- */
+/* ACTIONS */
+
+/* container */
+#home #actions { height:474px;/*235*2+1*/ }
+
+/* caption and overlay */
+#home .a3 .padder > .captions,
+#home .a3 .overlay  { background:rgba(133,0,68,0.9); }
+.oldie #home .a3 .padder > .captions,
+.oldie #home .a3 .overlay  { background:#850044; }
+
+@media only screen and (max-width:500px) {
+	
+	/* auto height */
+	#home #actions { height:auto; }
+	
+	/* captions interaction */
+	#home #actions .a3 .captions { background-color:#850044; }
+	#home #actions .a3:hover .captions { background-color:#980852; }
+
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* NEWS */
+
+/* title */
+#home #news h1.title { color:#850044; } 
+
+
+/* ==========================================================================
+   skin - CONTENT VIEWPORT
+   ========================================================================== */
+
+/* link */
+.contentViewport a,
+.contentViewport a:hover,
+.contentViewport a:focus,
+.contentViewport a:active { color:#d20079!important; }
+
+/* leaderText */
+.contentViewport .leaderText  { color:#d20079; }
+
+/* date */
+.contentViewport .date { color:#d20079; }
+
+/* divider */
+.dividerSolid,	.contentViewport .dividerSolid 	{ border-top-color:#d20079; }
+.dividerLite,	.contentViewport .dividerLite 	{ border-top-color:#d20079; }
+ 
+/* specialbox */
+.contentViewport .specialBox .title { color:#d20079; }	
+.contentViewport .specialBox .icon	{ color:#d20079; }
+
+/* styledTable */
+.contentViewport .styledTable th,
+.contentViewport .styledTable th p { background:#d20079; }
