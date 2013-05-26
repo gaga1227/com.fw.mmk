@@ -1,0 +1,282 @@
+/* ==========================================================================
+   skin - MMPE
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* PAGE BG */
+#pageBg { background-image:url(../img/mmpe/bg-header-gradient.png); }
+
+/* -------------------------------------------------------------------------- */
+/* HEADER */
+
+/* bg */
+#header .brand { background-image:url(../img/mmpe/bg-header.jpg); }
+@media only screen and (max-width:640px) {
+
+	#header .brand { background-image:url(../img/mmpe/bg-header-mob.jpg); }
+
+}
+
+/* img */
+#header .brand img.symbol 	{ display:none!important; }
+#header .brand img.title 	{ width:380px; top:75px; left:10%; }
+#header .brand img.sig 		{ width:250px; bottom:40px; right:23%; }
+
+/* img - responsive */
+@media only screen and (max-width:900px) {
+	
+	#header .brand img.sig 		{ bottom:18px; right:20%; } 
+
+}
+@media only screen and (max-width:700px) {
+	
+	#header .brand img.sig 		{ left:300px; right:auto; } 
+
+}
+@media only screen and (max-width:640px) {
+	
+	/* center imgs */
+	#header .brand img.title { position:relative; top:auto; left:auto; width:94%; max-width:380px; height:auto; max-height:80px; margin:100px auto 0 auto; }
+	#header .brand img.sig	 { display:none; }
+}
+@media only screen and (max-width:320px) {
+
+	/* reduce height */
+	#header .brand img.title { margin-top:110px; }
+	
+}
+
+/* -------------------------------------------------------------------------- */
+/* NAV */ 
+
+/* bg */
+#nav { background:#3f372a; }
+
+/* navItem - interaction */	
+.no-touch #nav .navItem:hover,
+.no-touch #nav .navItem:focus,
+.touch #nav .navItem:active { background:#534b40; }
+
+/* navItem - selected */
+#nav .navItem.selected,
+#nav .navItem.selected .label,
+.no-touch #nav .navItem.selected:hover,
+.no-touch #nav .navItem.selected:focus,
+.touch #nav .navItem.selected:active { background:#534b40; border-top-color:#ed5f47; }
+
+/* navItem extend */
+#nav #nav0 { width: 9.00%; }
+#nav #nav1 { width:11.75%; }
+#nav #nav2 { width:14.25%; }
+#nav #nav3 { width:15.50%; }
+#nav #nav4 { width: 9.75%; }
+#nav #nav5 { width:17.00%; }
+#nav #nav6 { width: 8.00%; }
+#nav #nav7 { width:14.50%; }
+
+@media only screen and (max-width:640px) {
+	
+	/* navItem - border */
+	#nav #navSelect,
+	#nav #navItems .navItem { border-bottom-color:#635441; }
+	
+	/* navItem - interaction */	
+	.no-touch #nav #navItems .navItem:hover,
+	.no-touch #nav #navItems .navItem:focus,
+	.touch #nav #navItems .navItem:active { background:#ed5f47; }
+	
+	/* navItem - selected */
+	#nav .navItem.selected,
+	#nav .navItem.selected .label,
+	.no-touch #nav .navItem.selected:hover,
+	.no-touch #nav .navItem.selected:focus,
+	.touch #nav .navItem.selected:active { color:#ed5f47; border-bottom-color:#635441; }
+	
+	/* navSelect */
+	#nav #navSelect { background:#322c22; }
+	
+}
+
+/* -------------------------------------------------------------------------- */
+/* PAGINATION */
+		
+/* btnNav */
+.pagination .btnNav:hover,
+.pagination .btnNav:focus,
+.pagination .btnNav:active { background:#f46047; }
+
+/* -------------------------------------------------------------------------- */
+/* UTILS TOP */
+
+/* btnSearch */
+#utilsTop #storeSearch .btnSearch:hover,
+#utilsTop #storeSearch .btnSearch:focus,
+#utilsTop #storeSearch .btnSearch:active { background:#f46047; }
+
+/* btnMenu */
+#utilsTop .btnMenu:hover .icon,
+#utilsTop .btnMenu:focus .icon,
+#utilsTop .btnMenu:active .icon { color:#f46047; }
+
+/* btnCart */
+#utilsTop #btnCart .notes { color:#f46047; }
+#utilsTop #btnCart .fwicon-shopping-cart { color:#f46047; }
+
+/* -------------------------------------------------------------------------- */
+/* UTILS MENU */
+
+/* menuCart */
+#menuCart .cartCell .btnItem:hover .label { color:#f46047; }
+#menuCart .cartCell .icon { color:#f46047; }
+
+/* -------------------------------------------------------- */
+/* FORM */
+
+/* headerBox */
+.formView .headerBox { background:#f46047; }
+
+/* radio/checkbox */
+.formView span.radio,
+.formView span.checkbox	{ background-image:url(../img/mmpe/radio-custom.png); }
+@media 	(-o-min-device-pixel-ratio: 5/4),
+		(-webkit-min-device-pixel-ratio: 1.25),
+		(min-resolution:120dpi) {
+
+	/*use @2x image*/
+	.formView span.radio,
+	.formView span.checkbox { 
+		background-image:url(../img/mmpe/radio-custom@2x.png); }
+}
+		
+/* input */
+.formView input.text:focus,
+.formView input.text:active { border-color:#f46047; }
+
+/* -------------------------------------------------------------------------- */
+/* ITEMS PRODUCT */
+
+/* ribbon */
+.itemProduct .imgThumb .ribbon { background:#f46047; }
+.itemProduct .imgThumb .ribbon:before { border-color:#f46047; }
+	
+/* title */
+.itemProduct .title:hover,
+.itemProduct .title:focus,
+.itemProduct .title:active { color:#f46047; }
+
+/* -------------------------------------------------------------------------- */
+/* CONTENT VIEWPORT */
+
+/* a */
+.contentViewport a,
+.contentViewport a:hover,
+.contentViewport a:focus,
+.contentViewport a:active { color:#f46047; }
+
+/* -------------------------------------------------------------------------- */
+/* BUTTONS */
+
+/* btnCircle */
+.btnCircle:hover,
+.btnCircle:focus,
+.btnCircle:active { background:#f46047; }
+
+/* btnBox */
+.btnBox:hover,
+.btnBox:focus,
+.btnBox:active { background:#f46047; }
+
+/* btnBoxHighlight */
+.btnBoxHighlight { background:#f46047; }
+.btnBoxHighlight:hover,
+.btnBoxHighlight:focus,
+.btnBoxHighlight:active { background:#000; }
+
+/* btnBoxNoBg */
+.btnBoxNoBg:hover,
+.btnBoxNoBg:focus,
+.btnBoxNoBg:active,
+.btnBoxNoBg:hover .label,
+.btnBoxNoBg:focus .label,
+.btnBoxNoBg:active .label,
+.btnBoxNoBg:hover .icon,
+.btnBoxNoBg:focus .icon,
+.btnBoxNoBg:active .icon { color:#f46047!important; }
+
+/* btnCapsule */
+.btnCapsule { background:#f46047; }
+.btnCapsule:hover,
+.btnCapsule:focus,
+.btnCapsule:active { background-color:#333; }
+
+/* btnAction */
+.btnAction:hover .icon,
+.btnAction:focus .icon,
+.btnAction:active .icon { background:#f46047; }
+
+/* btnSlide */
+.slideshow .controls .activeSlide,
+.slideshow .controls .activeSlide:hover,
+.slideshow .controls .activeSlide:focus,
+.slideshow .controls .activeSlide:active,
+#categories .controls .activeSlide,
+#categories .controls .activeSlide:hover,
+#categories .controls .activeSlide:focus,
+#categories .controls .activeSlide:active { background:#f46047; }
+
+/* btnCategory */
+.btnCategory .icon { background:#997d7e; }
+.btnCategory:hover .icon,
+.btnCategory:focus .icon,
+.btnCategory:active .icon { background:#f46047; } 
+.btnCategory:hover .label,
+.btnCategory:focus .label,
+.btnCategory:active .label { color:#f46047!important; }
+
+/* btnCategoryStrip */
+.btnCategoryStrip .icon { background:#997d7e; }
+.btnCategoryStrip:hover .icon,
+.btnCategoryStrip:focus .icon,
+.btnCategoryStrip:active .icon { background:#f46047; }
+.btnCategoryStrip:hover .label,
+.btnCategoryStrip:focus .label,
+.btnCategoryStrip:active .label { color:#f46047!important; }
+
+/* -------------------------------------------------------------------------- */
+/* TEXT */
+
+/* category */
+.category,
+.category:visited { color:#f46047; }
+
+/* -------------------------------------------------------------------------- */
+/* FOCUS */
+
+/* container bg */
+#focus { background:#393229 url(../img/mmpe/bg-pattern-textile.jpg); }
+
+/* -------------------------------------------------------------------------- */
+/* PROGRESS */
+
+/* container */
+#progress { background:#f46047; }
+#progress .bg { background:url(../img/mmpe/bg-tile-progress.png); }
+
+/* title */
+.oldie #progress .h2 { background:#f5705a; }
+
+/* sepCorner */
+#progress .sepCorner { background-image:url(../img/mmpe/img-progress-sepcorner-rgba.png); }
+.oldie #progress .sepCorner { background-image:url(../img/mmpe/img-progress-sepcorner-rgb.png); }
+	
+/* -------------------------------------------------------------------------- */
+/* CHECKOUT */
+
+/* container bg */
+#checkout #aside { background:#f46047; }
+
+/* -------------------------------------------------------------------------- */
+/* SUMMARY/CREDIT CARD */
+
+/* btnHint color */
+#checkout #creditcard .btnHint { color:#f46047; }

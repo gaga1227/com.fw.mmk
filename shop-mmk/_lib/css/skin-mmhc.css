@@ -1,0 +1,285 @@
+/* ==========================================================================
+   skin - MMHC
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* PAGE BG */
+#pageBg { background-image:url(../img/mmhc/bg-header-gradient.png); }
+
+/* -------------------------------------------------------------------------- */
+/* HEADER */
+
+/* bg */
+#header .brand { background-image:url(../img/mmhc/bg-header.jpg); }
+@media only screen and (max-width:640px) {
+
+	#header .brand { background-image:url(../img/mmhc/bg-header-mob.jpg); }
+
+}
+
+/* img */
+#header .brand img.symbol 	{ width:190px; top:50px; left:0; }
+#header .brand img.title 	{ width:380px; top:75px; left:20%; }
+#header .brand img.sig 		{ width:250px; bottom:40px; right:23%; } 
+@media only screen and (max-width:980px) {
+	
+	#header .brand img.symbol 	{ width:160px; height:101px; top:55px; left:25px; }
+	#header .brand img.title 	{ left:200px; }
+	#header .brand img.sig 		{ bottom:18px; right:20%; } 
+
+}
+@media only screen and (max-width:700px) {
+	
+	#header .brand img.sig 		{ left:300px; right:auto; } 
+
+}
+@media only screen and (max-width:640px) {
+	
+	/* center imgs */
+	#header .brand img.title 	{ position:relative; top:auto; left:auto; width:94%; max-width:380px; height:auto; max-height:80px; margin:100px auto 0 auto; }
+	#header .brand img.symbol,
+	#header .brand img.sig	 	{ display:none; }
+
+}
+@media only screen and (max-width:320px) {
+
+	/* reduce height */
+	#header .brand img.title 	{ margin-top:110px; }
+	
+}
+
+/* -------------------------------------------------------------------------- */
+/* NAV */ 
+
+/* bg */
+#nav { background:#402416; }
+
+/* navItem - interaction */	
+.no-touch #nav .navItem:hover,
+.no-touch #nav .navItem:focus,
+.touch #nav .navItem:active { background:#533b2e; }
+
+/* navItem - selected */
+#nav .navItem.selected,
+#nav .navItem.selected .label,
+.no-touch #nav .navItem.selected:hover,
+.no-touch #nav .navItem.selected:focus,
+.touch #nav .navItem.selected:active { background:#533b2e; border-top-color:#ee3d5a; }
+
+/* navItem extend */
+#nav #nav0 { width:10.00%; }
+#nav #nav1 { width:13.00%; }
+#nav #nav2 { width:12.00%; }
+#nav #nav3 { width:10.50%; }
+#nav #nav4 { width:12.25%; }
+#nav #nav5 { width:13.25%; }
+#nav #nav6 { width:13.50%; }
+#nav #nav7 { width:15.25%; }
+
+@media only screen and (max-width:640px) {
+	
+	/* navItem - border */
+	#nav #navSelect,
+	#nav #navItems .navItem { border-bottom-color:#61331d; }
+	
+	/* navItem - interaction */	
+	.no-touch #nav #navItems .navItem:hover,
+	.no-touch #nav #navItems .navItem:focus,
+	.touch #nav #navItems .navItem:active { background:#d65101; }
+	
+	/* navItem - selected */
+	#nav .navItem.selected,
+	#nav .navItem.selected .label,
+	.no-touch #nav .navItem.selected:hover,
+	.no-touch #nav .navItem.selected:focus,
+	.touch #nav .navItem.selected:active { color:#fe721d; border-bottom-color:#61331d; }
+	
+	/* navSelect */
+	#nav #navSelect { background:#582814; }
+	
+}
+
+/* -------------------------------------------------------------------------- */
+/* PAGINATION */
+		
+/* btnNav */
+.pagination .btnNav:hover,
+.pagination .btnNav:focus,
+.pagination .btnNav:active { background:#9e0e3a; }
+
+/* -------------------------------------------------------------------------- */
+/* UTILS TOP */
+
+/* btnSearch */
+#utilsTop #storeSearch .btnSearch:hover,
+#utilsTop #storeSearch .btnSearch:focus,
+#utilsTop #storeSearch .btnSearch:active { background:#9e0e3a; }
+
+/* btnMenu */
+#utilsTop .btnMenu:hover .icon,
+#utilsTop .btnMenu:focus .icon,
+#utilsTop .btnMenu:active .icon { color:#9e0e3a; }
+
+/* btnCart */
+#utilsTop #btnCart .notes { color:#9e0e3a; }
+#utilsTop #btnCart .fwicon-shopping-cart { color:#9e0e3a; }
+
+/* -------------------------------------------------------------------------- */
+/* UTILS MENU */
+
+/* menuCart */
+#menuCart .cartCell .btnItem:hover .label { color:#9e0e3a; }
+#menuCart .cartCell .icon { color:#9e0e3a; }
+
+/* -------------------------------------------------------- */
+/* FORM */
+
+/* headerBox */
+.formView .headerBox { background:#9e0e3a; }
+
+/* radio/checkbox */
+.formView span.radio,
+.formView span.checkbox	{ background-image:url(../img/mmhc/radio-custom.png); }
+@media 	(-o-min-device-pixel-ratio: 5/4),
+		(-webkit-min-device-pixel-ratio: 1.25),
+		(min-resolution:120dpi) {
+
+	/*use @2x image*/
+	.formView span.radio,
+	.formView span.checkbox { 
+		background-image:url(../img/mmhc/radio-custom@2x.png); }
+}
+		
+/* input */
+.formView input.text:focus,
+.formView input.text:active { border-color:#9e0e3a; }
+
+/* -------------------------------------------------------------------------- */
+/* ITEMS PRODUCT */
+
+/* ribbon */
+.itemProduct .imgThumb .ribbon { background:#9e0e3a; }
+.itemProduct .imgThumb .ribbon:before { border-color:#9e0e3a; }
+	
+/* title */
+.itemProduct .title:hover,
+.itemProduct .title:focus,
+.itemProduct .title:active { color:#9e0e3a; }
+
+/* -------------------------------------------------------------------------- */
+/* CONTENT VIEWPORT */
+
+/* a */
+.contentViewport a,
+.contentViewport a:hover,
+.contentViewport a:focus,
+.contentViewport a:active { color:#9e0e3a; }
+
+/* -------------------------------------------------------------------------- */
+/* BUTTONS */
+
+/* btnCircle */
+.btnCircle:hover,
+.btnCircle:focus,
+.btnCircle:active { background:#9e0e3a; }
+
+/* btnBox */
+.btnBox:hover,
+.btnBox:focus,
+.btnBox:active { background:#9e0e3a; }
+
+/* btnBoxHighlight */
+.btnBoxHighlight { background:#9e0e3a; }
+.btnBoxHighlight:hover,
+.btnBoxHighlight:focus,
+.btnBoxHighlight:active { background:#000; }
+
+/* btnBoxNoBg */
+.btnBoxNoBg:hover,
+.btnBoxNoBg:focus,
+.btnBoxNoBg:active,
+.btnBoxNoBg:hover .label,
+.btnBoxNoBg:focus .label,
+.btnBoxNoBg:active .label,
+.btnBoxNoBg:hover .icon,
+.btnBoxNoBg:focus .icon,
+.btnBoxNoBg:active .icon { color:#9e0e3a!important; }
+
+/* btnCapsule */
+.btnCapsule { background:#9e0e3a; }
+.btnCapsuleBig { background:#ee3d5a; }
+.btnCapsule:hover,
+.btnCapsule:focus,
+.btnCapsule:active { background-color:#333; }
+
+/* btnAction */
+.btnAction:hover .icon,
+.btnAction:focus .icon,
+.btnAction:active .icon { background:#9e0e3a; }
+
+/* btnSlide */
+.slideshow .controls .activeSlide,
+.slideshow .controls .activeSlide:hover,
+.slideshow .controls .activeSlide:focus,
+.slideshow .controls .activeSlide:active,
+#categories .controls .activeSlide,
+#categories .controls .activeSlide:hover,
+#categories .controls .activeSlide:focus,
+#categories .controls .activeSlide:active { background:#9e0e3a; }
+
+/* btnCategory */
+.btnCategory .icon { background:#8a776c; }
+.btnCategory:hover .icon,
+.btnCategory:focus .icon,
+.btnCategory:active .icon { background:#9e0e3a; } 
+.btnCategory:hover .label,
+.btnCategory:focus .label,
+.btnCategory:active .label { color:#9e0e3a!important; }
+
+/* btnCategoryStrip */
+.btnCategoryStrip .icon { background:#8a776c; }
+.btnCategoryStrip:hover .icon,
+.btnCategoryStrip:focus .icon,
+.btnCategoryStrip:active .icon { background:#9e0e3a; }
+.btnCategoryStrip:hover .label,
+.btnCategoryStrip:focus .label,
+.btnCategoryStrip:active .label { color:#9e0e3a!important; }
+
+/* -------------------------------------------------------------------------- */
+/* TEXT */
+
+/* category */
+.category,
+.category:visited { color:#9e0e3a; }
+
+/* -------------------------------------------------------------------------- */
+/* FOCUS */
+
+/* container bg */
+#focus { background:#a50a5e url(../img/mmhc/bg-pattern-textile.jpg); }
+
+/* -------------------------------------------------------------------------- */
+/* PROGRESS */
+
+/* container */
+#progress { background:#9e0e3a; }
+#progress .bg { background:url(../img/mmhc/bg-tile-progress.png); }
+
+/* title */
+.oldie #progress .h2 { background:#a8274e; }
+
+/* sepCorner */
+#progress .sepCorner { background-image:url(../img/mmhc/img-progress-sepcorner-rgba.png); }
+.oldie #progress .sepCorner { background-image:url(../img/mmhc/img-progress-sepcorner-rgb.png); }
+	
+/* -------------------------------------------------------------------------- */
+/* CHECKOUT */
+
+/* container bg */
+#checkout #aside { background:#9e0e3a; }
+
+/* -------------------------------------------------------------------------- */
+/* SUMMARY/CREDIT CARD */
+
+/* btnHint color */
+#checkout #creditcard .btnHint { color:#9e0e3a; }

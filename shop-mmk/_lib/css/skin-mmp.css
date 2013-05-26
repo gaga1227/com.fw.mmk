@@ -1,0 +1,277 @@
+/* ==========================================================================
+   skin - MMP
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* PAGE BG */
+#pageBg { background-image:url(../img/mmp/bg-header-gradient.png); }
+
+/* -------------------------------------------------------------------------- */
+/* HEADER */
+
+/* bg */
+#header .brand { background-image:url(../img/mmp/bg-header.jpg); }
+@media only screen and (max-width:640px) {
+
+	#header .brand { background-image:url(../img/mmp/bg-header-mob.jpg); }
+
+}
+
+/* img */
+#header .brand img.symbol 	{ display:none!important; }
+#header .brand img.title 	{ width:380px; top:75px; left:10%; }
+#header .brand img.sig 		{ width:250px; bottom:40px; right:23%; }
+
+/* img - responsive */
+@media only screen and (max-width:800px) {
+	
+	#header .brand img.sig 	{ right:15%; }
+		
+}
+@media only screen and (max-width:640px) {
+	
+	/* center imgs */
+	#header .brand img.title { position:relative; top:auto; left:auto; width:94%; max-width:380px; height:auto; max-height:80px; margin:100px auto 0 auto; }
+	#header .brand img.sig	 { display:none; }
+}
+@media only screen and (max-width:320px) {
+
+	/* reduce height */
+	#header .brand img.title { margin-top:110px; }
+	
+}
+
+/* -------------------------------------------------------------------------- */
+/* NAV */ 
+
+/* bg */
+#nav { background:#3f1e36; }
+
+/* navItem - interaction */	
+.no-touch #nav .navItem:hover,
+.no-touch #nav .navItem:focus,
+.touch #nav .navItem:active { background:#53354a; }
+
+/* navItem - selected */
+#nav .navItem.selected,
+#nav .navItem.selected .label,
+.no-touch #nav .navItem.selected:hover,
+.no-touch #nav .navItem.selected:focus,
+.touch #nav .navItem.selected:active { background:#53354a; border-top-color:#d20079; }
+
+/* navItem extend */
+#nav #nav0 { width:10.00%; }
+#nav #nav1 { width:13.00%; }
+#nav #nav2 { width:12.00%; }
+#nav #nav3 { width:10.50%; }
+#nav #nav4 { width:12.25%; }
+#nav #nav5 { width:13.25%; }
+#nav #nav6 { width:13.50%; }
+#nav #nav7 { width:15.25%; }
+
+@media only screen and (max-width:640px) {
+	
+	/* navItem - border */
+	#nav #navSelect,
+	#nav #navItems .navItem { border-bottom-color:#662456; }
+	
+	/* navItem - interaction */	
+	.no-touch #nav #navItems .navItem:hover,
+	.no-touch #nav #navItems .navItem:focus,
+	.touch #nav #navItems .navItem:active { background:#d20079; }
+	
+	/* navItem - selected */
+	#nav .navItem.selected,
+	#nav .navItem.selected .label,
+	.no-touch #nav .navItem.selected:hover,
+	.no-touch #nav .navItem.selected:focus,
+	.touch #nav .navItem.selected:active { color:#d20079; border-bottom-color:#662456; }
+	
+	/* navSelect */
+	#nav #navSelect { background:#33182b; }
+	
+}
+
+/* -------------------------------------------------------------------------- */
+/* PAGINATION */
+		
+/* btnNav */
+.pagination .btnNav:hover,
+.pagination .btnNav:focus,
+.pagination .btnNav:active { background:#d20079; }
+
+/* -------------------------------------------------------------------------- */
+/* UTILS TOP */
+
+/* btnSearch */
+#utilsTop #storeSearch .btnSearch:hover,
+#utilsTop #storeSearch .btnSearch:focus,
+#utilsTop #storeSearch .btnSearch:active { background:#d20079; }
+
+/* btnMenu */
+#utilsTop .btnMenu:hover .icon,
+#utilsTop .btnMenu:focus .icon,
+#utilsTop .btnMenu:active .icon { color:#d20079; }
+
+/* btnCart */
+#utilsTop #btnCart .notes { color:#d20079; }
+#utilsTop #btnCart .fwicon-shopping-cart { color:#d20079; }
+
+/* -------------------------------------------------------------------------- */
+/* UTILS MENU */
+
+/* menuCart */
+#menuCart .cartCell .btnItem:hover .label { color:#d20079; }
+#menuCart .cartCell .icon { color:#d20079; }
+
+/* -------------------------------------------------------- */
+/* FORM */
+
+/* headerBox */
+.formView .headerBox { background:#d20079; }
+
+/* radio/checkbox */
+.formView span.radio,
+.formView span.checkbox	{ background-image:url(../img/mmp/radio-custom.png); }
+@media 	(-o-min-device-pixel-ratio: 5/4),
+		(-webkit-min-device-pixel-ratio: 1.25),
+		(min-resolution:120dpi) {
+
+	/*use @2x image*/
+	.formView span.radio,
+	.formView span.checkbox { 
+		background-image:url(../img/mmp/radio-custom@2x.png); }
+}
+		
+/* input */
+.formView input.text:focus,
+.formView input.text:active { border-color:#d20079; }
+
+/* -------------------------------------------------------------------------- */
+/* ITEMS PRODUCT */
+
+/* ribbon */
+.itemProduct .imgThumb .ribbon { background:#d20079; }
+.itemProduct .imgThumb .ribbon:before { border-color:#d20079; }
+	
+/* title */
+.itemProduct .title:hover,
+.itemProduct .title:focus,
+.itemProduct .title:active { color:#d20079; }
+
+/* -------------------------------------------------------------------------- */
+/* CONTENT VIEWPORT */
+
+/* a */
+.contentViewport a,
+.contentViewport a:hover,
+.contentViewport a:focus,
+.contentViewport a:active { color:#d20079; }
+
+/* -------------------------------------------------------------------------- */
+/* BUTTONS */
+
+/* btnCircle */
+.btnCircle:hover,
+.btnCircle:focus,
+.btnCircle:active { background:#d20079; }
+
+/* btnBox */
+.btnBox:hover,
+.btnBox:focus,
+.btnBox:active { background:#d20079; }
+
+/* btnBoxHighlight */
+.btnBoxHighlight { background:#d20079; }
+.btnBoxHighlight:hover,
+.btnBoxHighlight:focus,
+.btnBoxHighlight:active { background:#000; }
+
+/* btnBoxNoBg */
+.btnBoxNoBg:hover,
+.btnBoxNoBg:focus,
+.btnBoxNoBg:active,
+.btnBoxNoBg:hover .label,
+.btnBoxNoBg:focus .label,
+.btnBoxNoBg:active .label,
+.btnBoxNoBg:hover .icon,
+.btnBoxNoBg:focus .icon,
+.btnBoxNoBg:active .icon { color:#d20079!important; }
+
+/* btnCapsule */
+.btnCapsule { background:#d20079; }
+.btnCapsule:hover,
+.btnCapsule:focus,
+.btnCapsule:active { background-color:#333; }
+
+/* btnAction */
+.btnAction:hover .icon,
+.btnAction:focus .icon,
+.btnAction:active .icon { background:#d20079; }
+
+/* btnSlide */
+.slideshow .controls .activeSlide,
+.slideshow .controls .activeSlide:hover,
+.slideshow .controls .activeSlide:focus,
+.slideshow .controls .activeSlide:active,
+#categories .controls .activeSlide,
+#categories .controls .activeSlide:hover,
+#categories .controls .activeSlide:focus,
+#categories .controls .activeSlide:active { background:#d20079; }
+
+/* btnCategory */
+.btnCategory .icon { background:#980852; }
+.btnCategory:hover .icon,
+.btnCategory:focus .icon,
+.btnCategory:active .icon { background:#d20079; } 
+.btnCategory:hover .label,
+.btnCategory:focus .label,
+.btnCategory:active .label { color:#d20079!important; }
+
+/* btnCategoryStrip */
+.btnCategoryStrip .icon { background:#980852; }
+.btnCategoryStrip:hover .icon,
+.btnCategoryStrip:focus .icon,
+.btnCategoryStrip:active .icon { background:#d20079; }
+.btnCategoryStrip:hover .label,
+.btnCategoryStrip:focus .label,
+.btnCategoryStrip:active .label { color:#d20079!important; }
+
+/* -------------------------------------------------------------------------- */
+/* TEXT */
+
+/* category */
+.category,
+.category:visited { color:#d20079; }
+
+/* -------------------------------------------------------------------------- */
+/* FOCUS */
+
+/* container bg */
+#focus { background:#a50a5e url(../img/mmp/bg-pattern-textile.jpg); }
+
+/* -------------------------------------------------------------------------- */
+/* PROGRESS */
+
+/* container */
+#progress { background:#d20079; }
+#progress .bg { background:url(../img/mmp/bg-tile-progress.png); }
+
+/* title */
+.oldie #progress .h2 { background:#a32164; }
+
+/* sepCorner */
+#progress .sepCorner { background-image:url(../img/mmp/img-progress-sepcorner-rgba.png); }
+.oldie #progress .sepCorner { background-image:url(../img/mmp/img-progress-sepcorner-rgb.png); }
+	
+/* -------------------------------------------------------------------------- */
+/* CHECKOUT */
+
+/* container bg */
+#checkout #aside { background:#d20079; }
+
+/* -------------------------------------------------------------------------- */
+/* SUMMARY/CREDIT CARD */
+
+/* btnHint color */
+#checkout #creditcard .btnHint { color:#d20079; }

@@ -1,0 +1,313 @@
+/* ==========================================================================
+   skin - MMC-HOB
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* PAGE BG */
+#pageBg { background-image:url(../img/mmc-hob/bg-header-gradient.png); }
+
+/* -------------------------------------------------------------------------- */
+/* HEADER */
+
+/* bg */
+#header .brand { background-image:url(../img/mmc-hob/bg-header.jpg); }
+@media only screen and (max-width:640px) {
+
+	#header .brand { background-image:url(../img/mmc-hob/bg-header-mob.jpg); }
+
+}
+
+/* img */
+#header .brand img.symbol 	{ display:none!important; }
+#header .brand img.title 	{ width:420px; top:60px; left:5%; }
+#header .brand img.sig 		{ width:250px; bottom:40px; right:23%; }
+
+/* img - responsive */
+@media only screen and (max-width:960px) {
+	
+	#header .brand img.title 	{ top:48px; }
+	#header .brand img.sig 		{ bottom:18px; right:20%; } 
+
+}
+@media only screen and (max-width:700px) {
+	
+	#header .brand img.sig 		{ left:300px; right:auto; } 
+
+}
+@media only screen and (max-width:640px) {
+	
+	/* center imgs */
+	#header .brand img.title { position:relative; top:auto; left:auto; width:94%; max-width:420px; height:auto; max-height:110px; margin:85px auto 0 auto; }
+	#header .brand img.sig	 { display:none; }
+}
+@media only screen and (max-width:320px) {
+
+	/* reduce height */
+	#header .brand img.title { margin-top:100px; }
+	
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* NAV */ 
+
+/* bg */
+#nav { background:#384420; }
+
+/* navItem - interaction */	
+.no-touch #nav .navItem:hover,
+.no-touch #nav .navItem:focus,
+.touch #nav .navItem:active { background:#4b5837; }
+
+/* navItem - selected */
+#nav .navItem.selected,
+#nav .navItem.selected .label,
+.no-touch #nav .navItem.selected:hover,
+.no-touch #nav .navItem.selected:focus,
+.touch #nav .navItem.selected:active { background:#4b5837; border-top-color:#66b941; }
+
+/* navItems - spacing */
+#navItems { margin-right:12%; }
+#nav .navItem .label { padding:0 5px; }
+
+/* navItem extend */
+#nav #nav0 { width:9.75%; margin-left:1%; }
+#nav #nav1 { width:8.75%; }
+#nav #nav2 { width:21.00%; }
+#nav #nav3 { width:14.75%; }
+#nav #nav4 { width:9.75%; }
+#nav #nav5 { width:22.00%; }
+#nav #nav6 { width:12.75%; margin-right:0%; }
+
+/* responsive */
+@media only screen and (max-width:980px) {
+	
+	/* more space */
+	#navItems { margin-right:10%; }
+
+	/* shrink text */
+	#nav .navItem .label { letter-spacing:-1px; }
+
+}
+@media only screen and (max-width:800px) {
+
+	/* stretch to full */
+	#navItems { margin-right:0; }
+	#nav #nav0 { margin-left:0; }
+	#nav #nav1 { width:8.50%; }
+	#nav #nav2 { width:21.00%; }
+	#nav #nav4 { width:9.50%; }
+	#nav #nav5 { width:22.50%; }
+	#nav #nav6 { margin-right:0; }
+
+}
+@media only screen and (max-width:640px) {
+	
+	/* navItem - border */
+	#nav #navSelect,
+	#nav #navItems .navItem { border-bottom-color:#4d6d25; }
+	
+	/* navItem - interaction */	
+	.no-touch #nav #navItems .navItem:hover,
+	.no-touch #nav #navItems .navItem:focus,
+	.touch #nav #navItems .navItem:active { background:#66b941; }
+	
+	/* navItem - selected */
+	#nav .navItem.selected,
+	#nav .navItem.selected .label,
+	.no-touch #nav .navItem.selected:hover,
+	.no-touch #nav .navItem.selected:focus,
+	.touch #nav .navItem.selected:active { color:#66b941; border-bottom-color:#4d6d25; }
+	
+	/* navSelect */
+	#nav #navSelect { background:#2c361a; }
+	
+	/* expand text to normal */
+	#nav .navItem .label { letter-spacing:0px; padding:0 4%; }
+
+}
+
+/* -------------------------------------------------------------------------- */
+/* PAGINATION */
+		
+/* btnNav */
+.pagination .btnNav:hover,
+.pagination .btnNav:focus,
+.pagination .btnNav:active { background:#66b941; }
+
+/* -------------------------------------------------------------------------- */
+/* UTILS TOP */
+
+/* btnSearch */
+#utilsTop #storeSearch .btnSearch:hover,
+#utilsTop #storeSearch .btnSearch:focus,
+#utilsTop #storeSearch .btnSearch:active { background:#66b941; }
+
+/* btnMenu */
+#utilsTop .btnMenu:hover .icon,
+#utilsTop .btnMenu:focus .icon,
+#utilsTop .btnMenu:active .icon { color:#559b37; }
+
+/* btnCart */
+#utilsTop #btnCart .notes { color:#559b37; }
+#utilsTop #btnCart .fwicon-shopping-cart { color:#559b37; }
+
+/* -------------------------------------------------------------------------- */
+/* UTILS MENU */
+
+/* menuCart */
+#menuCart .cartCell .btnItem:hover .label { color:#66b941; }
+#menuCart .cartCell .icon { color:#66b941; }
+
+/* -------------------------------------------------------- */
+/* FORM */
+
+/* headerBox */
+.formView .headerBox { background:#66b941; }
+
+
+/* radio/checkbox */
+.formView span.radio,
+.formView span.checkbox	{ background-image:url(../img/mmc-hob/radio-custom.png); }
+@media 	(-o-min-device-pixel-ratio: 5/4),
+		(-webkit-min-device-pixel-ratio: 1.25),
+		(min-resolution:120dpi) {
+
+	/*use @2x image*/
+	.formView span.radio,
+	.formView span.checkbox { 
+		background-image:url(../img/mmc-hob/radio-custom@2x.png); }
+}
+		
+/* input */
+.formView input.text:focus,
+.formView input.text:active { border-color:#66b941; }
+
+/* -------------------------------------------------------------------------- */
+/* ITEMS PRODUCT */
+
+/* ribbon */
+.itemProduct .imgThumb .ribbon { background:#66b941; }
+.itemProduct .imgThumb .ribbon:before { border-color:#66b941; }
+	
+/* title */
+.itemProduct .title:hover,
+.itemProduct .title:focus,
+.itemProduct .title:active { color:#66b941; }
+
+/* -------------------------------------------------------------------------- */
+/* CONTENT VIEWPORT */
+
+/* a */
+.contentViewport a,
+.contentViewport a:hover,
+.contentViewport a:focus,
+.contentViewport a:active { color:#66b941; }
+
+/* -------------------------------------------------------------------------- */
+/* BUTTONS */
+
+/* btnCircle */
+.btnCircle:hover,
+.btnCircle:focus,
+.btnCircle:active { background:#66b941; }
+
+/* btnBox */
+.btnBox:hover,
+.btnBox:focus,
+.btnBox:active { background:#66b941; }
+
+/* btnBoxHighlight */
+.btnBoxHighlight { background:#66b941; }
+.btnBoxHighlight:hover,
+.btnBoxHighlight:focus,
+.btnBoxHighlight:active { background:#000; }
+
+/* btnBoxNoBg */
+.btnBoxNoBg:hover,
+.btnBoxNoBg:focus,
+.btnBoxNoBg:active,
+.btnBoxNoBg:hover .label,
+.btnBoxNoBg:focus .label,
+.btnBoxNoBg:active .label,
+.btnBoxNoBg:hover .icon,
+.btnBoxNoBg:focus .icon,
+.btnBoxNoBg:active .icon { color:#66b941!important; }
+
+/* btnCapsule */
+.btnCapsule { background:#66b941; }
+.btnCapsule:hover,
+.btnCapsule:focus,
+.btnCapsule:active { background-color:#333; }
+
+/* btnAction */
+.btnAction:hover .icon,
+.btnAction:focus .icon,
+.btnAction:active .icon { background:#559b37; }
+
+/* btnSlide */
+.slideshow .controls .activeSlide,
+.slideshow .controls .activeSlide:hover,
+.slideshow .controls .activeSlide:focus,
+.slideshow .controls .activeSlide:active,
+#categories .controls .activeSlide,
+#categories .controls .activeSlide:hover,
+#categories .controls .activeSlide:focus,
+#categories .controls .activeSlide:active { background:#66b941; }
+
+/* btnCategory */
+.btnCategory .icon { background:#559b37; }
+.btnCategory:hover .icon,
+.btnCategory:focus .icon,
+.btnCategory:active .icon { background:#66b941; } 
+.btnCategory:hover .label,
+.btnCategory:focus .label,
+.btnCategory:active .label { color:#66b941!important; }
+
+/* btnCategoryStrip */
+.btnCategoryStrip .icon { background:#559b37; }
+.btnCategoryStrip:hover .icon,
+.btnCategoryStrip:focus .icon,
+.btnCategoryStrip:active .icon { background:#66b941; }
+.btnCategoryStrip:hover .label,
+.btnCategoryStrip:focus .label,
+.btnCategoryStrip:active .label { color:#66b941!important; }
+
+/* -------------------------------------------------------------------------- */
+/* TEXT */
+
+/* category */
+.category,
+.category:visited { color:#66b941; }
+
+/* -------------------------------------------------------------------------- */
+/* FOCUS */
+
+/* container bg */
+#focus { background:#393229 url(../img/mmc-hob/bg-pattern-textile.jpg); }
+
+/* -------------------------------------------------------------------------- */
+/* PROGRESS */
+
+/* container */
+#progress { background:#559b37; }
+#progress .bg { background:url(../img/mmc-hob/bg-tile-progress.png); }
+
+/* title */
+.oldie #progress .h2 { background:#76c054; }
+
+/* sepCorner */
+#progress .sepCorner { background-image:url(../img/mmc-hob/img-progress-sepcorner-rgba.png); }
+.oldie #progress .sepCorner { background-image:url(../img/mmc-hob/img-progress-sepcorner-rgb.png); }
+	
+/* -------------------------------------------------------------------------- */
+/* CHECKOUT */
+
+/* container bg */
+#checkout #aside { background:#559b37; }
+
+/* -------------------------------------------------------------------------- */
+/* SUMMARY/CREDIT CARD */
+
+/* btnHint color */
+#checkout #creditcard .btnHint { color:#559b37; }

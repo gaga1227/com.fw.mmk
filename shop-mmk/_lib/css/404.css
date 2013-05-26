@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* ------------------------------------------------------------------------------ */
+/* 404 */
+/* ------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------ */
+/* overriding */
+body#page404 #container { min-height:0; }
+body#page404 #pageBg3 { display:none!important; }
+
+/* ------------------------------------------------------------------------------ */
+/* header */
+#header404 { 
+	position:relative; width:auto; height:auto; margin:0; padding:3% 5%; overflow:hidden;
+	background:#ebebeb; }
+	
+	/* heading */
+	#header404 .heading { 
+		color:#1c408b; font-size:32px; line-height:40px; font-weight:normal; font-style:normal; margin:0; padding:0;
+		font-family:'OpenSansSemibold',sans-serif; }
+
+/* ------------------------------------------------------------------------------ */
+/* content */
+#content404 { 
+	position:relative; width:auto; height:auto; min-height:250px; margin:0; padding:4% 40% 4% 5%; overflow:hidden;
+	background:#fff url(../img/bg-wm-crest.png) right bottom no-repeat; }
+	
+
+/* ------------------------------------------------------------------------------ */
+/* responsive */
+@media only screen and (max-width:600px) {
+
+	/* content */
+	#header404,
+	#content404 { padding:4% 5% 4% 5%; background-image:none; }
+	
+	/* heading */
+	#header404 .heading { font-size:26px; line-height:30px; } 
+	
+}
+
