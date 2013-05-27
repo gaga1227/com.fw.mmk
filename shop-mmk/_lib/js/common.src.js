@@ -62,7 +62,7 @@ function init(){
 
 	//debug
 	displayDebugInfo('#debugInfo');
-	DebugSkins = new debugSkin('#debugSkin', '#cssskin', [ 'mmk','mmhc','mmp','mmpe','mmc-ade','mmc-bri','mmc-hob','mmc-per' ]);
+	//DebugSkins = new debugSkin('#debugSkin', '#cssskin', [ 'mmk','mmhc','mmp','mmpe','mmc-ade','mmc-bri','mmc-hob','mmc-per' ]);
 	
 }
 /* DOM.ready */
